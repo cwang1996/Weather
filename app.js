@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
     // const proxy = 'https://cors-anywhere.herokuapp.com/';
     submit.addEventListener('click', function(){
 
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=c3e29150b93583a26be45eba04c56f74`;
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=c3e29150b93583a26be45eba04c56f74`;
     fetch(api)
         .then(response => {
             return response.json();
