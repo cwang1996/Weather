@@ -21,11 +21,15 @@ body, html {
     letter-spacing: .1em;
 }
 
-.searchbar-container {
+.wrap {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.searchbar-container {
+    text-align: center;
 }
 
 .searchbar {
@@ -42,7 +46,7 @@ body, html {
 }
 
 .submit {
-    padding: 15px 15px;
+    padding: 12.5px 15px;
     border-radius: 4px;
     border: none;
     font-size: 16px;
@@ -65,4 +69,10 @@ input[placeholder] {
 .temperature-description {
     margin-top: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 500px){
+    .searchbar {
+        width: 100%;
+    }
 }
